@@ -85,7 +85,7 @@ document.querySelector(".hint").addEventListener("click", function () {
       h = randomNum();
     } while (h == secret);
 
-    if (secret > hint) {
+    if (secret > h) {
       document.querySelector(
         ".message"
       ).textContent = `The Number Is Bigger Than ${h}`;
