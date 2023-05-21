@@ -4,7 +4,6 @@ let score = 10;
 let best_score = 0;
 let hint = 0;
 
-console.log(secret);
 
 document.querySelector(".check").addEventListener("click", function () {
   const guess = document.querySelector(".guess").value;
@@ -47,7 +46,6 @@ document.querySelector(".again").addEventListener("click", function () {
   document.querySelector(".guess").value = "";
   enable();
 
-  console.log(secret);
 });
 
 function displyMessage(message) {
