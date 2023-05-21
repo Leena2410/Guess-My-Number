@@ -85,10 +85,10 @@ document.querySelector(".hint").addEventListener("click", function () {
       h = randomNum();
     } while (h == secret);
 
-    if (hint > secret) {
+    if (secret > hint) {
       document.querySelector(
         ".message"
-      ).textContent = `The Number Is Larger Than ${h}`;
+      ).textContent = `The Number Is Bigger Than ${h}`;
     } else {
       document.querySelector(
         ".message"
